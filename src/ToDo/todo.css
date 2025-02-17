@@ -145,3 +145,12 @@ header h1 {
     color: #a71d2a;
     transform: scale(1.2);
 }
+
+
+.checkList{
+    text-decoration: line-through;
+}
+
+.notCheckedList{
+    text-decoration: none;
+}
