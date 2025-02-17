@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+    background-color: rgb(76, 109, 136);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* To-Do Container */
+.todo-container {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: 0.2s;
+}
+/* 
+.todo-container:hover {
+    transform: scale(1.05);
+} */
+
+/* Header */
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form {
+    display: flex;
+    
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    border-radius: 50px;
+    align-items: center;
+}
+.form-child{
+    display: flex;
+}
+.todo-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    margin-left: 10px;
+}
+
+.todo-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Add Task Button */
+.todo-btn {
+    background: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.todo-btn:hover {
+    background: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Task List */
+.myUnOrderedList {
+    margin-top: 20px;
+}
+
+.myUnOrderedList ul {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.todo-item:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Task Text */
+.todo-item span {
+    flex: 1;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+/* Buttons */
+.check-btn, .delete-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.check-btn {
+    color: #1ff303;
+}
+
+.check-btn:hover {
+    color: #0b8f2a;
+    transform: scale(1.2);
+}
+
+.delete-btn {
+    color: #dc3545;
+}
+
+.delete-btn:hover {
+    color: #a71d2a;
+    transform: scale(1.2);
+}
