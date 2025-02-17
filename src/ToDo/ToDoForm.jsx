@@ -1,5 +1,18 @@
-export const ToDoForm = ()=>{
-    
+import { useState } from "react"
+
+export const ToDoForm = ({onAddToDo})=>{
+
+    const[inputValue , setInputValue] = useState("");
+    const handleInputChange = (value)=>{
+        setInputValue(value);
+    };
+
+    const handleFormSubmit = (event)=>{
+        event.preventDefault();
+        onAddToDo(inputValue);
+        setInputValue("");
+
+    }
     return(
         <section className="form">
                 <form onSubmit={handleFormSubmit} className="form-child">
